@@ -2,23 +2,30 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 100px);
-  gap: 8px;
+  gap: 10px;
+  background: green;
+  height: 100vh;
   padding: 10px;
 }
 
 #grid > div {
-  background-color: green;
+  background: green;
+  border: 2px solid white;
   color: white;
   font-size: 24px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Grid item placement */
+/* Positioning the grid items */
 #grid > div:nth-child(1) {
   grid-column: 1 / 5;
+  grid-row: 1 / 2;
 }
 
 #grid > div:nth-child(2) {
+  grid-column: 1 / 2;
   grid-row: 2 / 6;
 }
 
