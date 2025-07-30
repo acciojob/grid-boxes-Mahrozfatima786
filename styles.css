@@ -20,8 +20,6 @@ body#grid > div {
   color: white;
   font-size: 2rem;
   display: flex;
-  align-items: center;
-  justify-content: left;
   padding: 10px;
 }
 
